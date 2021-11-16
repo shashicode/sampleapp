@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import StepperComponent from './components/StepperComponent';
 
 function App() {
+  // Add as many set of two questions 
+  // to render one extra pair in the stepper
+  let questionSteps = [
+    'what is your name?', 'where do you live?', 
+    'what is your age?', 'what was your first school?',
+    'what is your address?', 'how many cookies you can eat in one go?'
+  ]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <StepperComponent 
+        steps={questionSteps}
+      />
     </div>
   );
 }

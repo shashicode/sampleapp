@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.nextButton {
+  padding: 5px;
+  background-color: #ade39f;
+  pointer-events: all;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.nextButton:hover {
+  cursor: pointer;
+}
+
+.disable {
+  background-color: #e3dfdf;
+  pointer-events: none;
+}
